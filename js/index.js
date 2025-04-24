@@ -34,6 +34,15 @@ jQuery(document).ready(function () {
       ", " +
       newDate.getFullYear()
   );
+  jQuery("#update_date").html(
+    dayNames[newDate.getDay()] +
+      ", " +
+      monthNames[newDate.getMonth()] +
+      " " +
+      newDate.getDate() +
+      ", " +
+      newDate.getFullYear()
+  );
 });
 // Font families
 WebFont.load({
