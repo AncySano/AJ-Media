@@ -1,3 +1,8 @@
+// clickjacking protection script locally
+if (window.top !== window.self) {
+  // Page is embedded in an iframe → prevent it
+  window.top.location = window.self.location;
+}
 // Set the current Date
 jQuery(document).ready(function () {
   var monthNames = [
